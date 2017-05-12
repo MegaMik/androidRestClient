@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light">
+    <Button
+        android:text="Get Product Id"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/btGetWebData"
+        android:clickable="true"
+        android:enabled="true"
+        android:background="@android:color/holo_blue_dark"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="2dp"
+        android:textStyle="normal"
+        android:layout_marginBottom="0.0dp" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/spnData"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10.0dp"
+        android:layout_marginBottom="69.0dp" />
+    <GridView
+        android:minWidth="80px"
+        android:minHeight="80px"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@+id/grdRecord"
+        android:numColumns="5"
+        android:stretchMode="columnWidth"
+        android:columnWidth="80dip"
+        android:gravity="center"
+        android:layout_marginTop="95.0dp" />
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:headerDividersEnabled="false" />
+    <com.refractored.fab.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add_white_24dp"
+        fab:fab_size="mini"
+        fab.colorNormal="#E64A19"
+        fab.colorPressed="#BF360C"
+        fab.colorRipple="#FF80AB"
+        android:layout_marginRight="0.0dp"
+        android:layout_marginLeft="0.0dp"
+        android:layout_marginTop="8.5dp" />
+</FrameLayout>

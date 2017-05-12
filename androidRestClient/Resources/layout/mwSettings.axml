@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:hint="IP Number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/txtIPNum"
+        android:textStyle="normal"
+        android:typeface="normal"
+        android:editable="true"
+        android:enabled="true" />
+    <EditText
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:hint="IP Path"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtIPNum"
+        android:id="@+id/txtAppName"
+        android:textStyle="normal"
+        android:typeface="normal"
+        android:editable="true"
+        android:enabled="true"
+        android:focusable="true"
+        android:keepScreenOn="true" />
+    <EditText
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:hint="IP Port"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtAppName"
+        android:id="@+id/txtIPPort"
+        android:textStyle="normal"
+        android:typeface="normal"
+        android:editable="true"
+        android:enabled="true"
+        android:focusable="true"
+        android:keepScreenOn="true" />
+    <Button
+        android:text="Save"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/btSave"
+        android:layout_below="@id/txtIPPort" />
+</RelativeLayout>
